@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "slug": "matematik-neden-zordur",
+        "baslik": "Matematik Neden Zordur? Gerçekten Öyle mi?",
+        "ozet": "Matematik, birçok öğrenci için en korkulan derslerden biri. Ancak bu korkunun gerçekten matematiğin zorluğundan mı, yoksa onu nasıl öğrendiğimizden mi kaynaklandığını hiç düşündünüz mü?",
+        "gorsel":"assets/images/matematik-zor-mu.jpg",
+        "tarih": "2025-08-03",
+        "yazar": "Matematik Dünyası Ekibi",
+        "icerik": [
+            { "tip": "paragraf", "metin": "“Ben matematikte iyi değilim.”, “Matematik zor, ben yapamıyorum.” Bu cümleleri duymayanınız var mı? Matematik, birçok öğrenci için en korkulan derslerden biri. Ancak bu korkunun gerçekten matematiğin zorluğundan mı, yoksa onu nasıl öğrendiğimizden mi kaynaklandığını hiç düşündünüz mü?" },
+            { "tip": "baslik", "metin": "Matematik Zor Değil, Farklı" },
+            { "tip": "paragraf", "metin": "Matematik; ezberden çok, anlamayı, düşünmeyi ve problem çözmeyi gerektirir. Bu yönüyle diğer derslerden biraz farklıdır. Tarih dersinde bir savaşı ezberleyebilir, fen bilgisinde bir tanımı hatırlayabilirsiniz. Ama matematikte formülü ezberlemeniz yetmez — nasıl, neden ve ne zaman kullanacağınızı da bilmelisiniz. Bu da onu ezbere değil, anlamaya dayalı bir ders yapar." },
+            { "tip": "baslik", "metin": "Zorluk Algısı Nereden Geliyor?" },
+            { "tip": "paragraf", "metin": "<b>Yanlış Başlangıçlar:</b> Temel kavramlar tam oturmadan ilerlemeye çalışmak, yeni bilgileri inşa etmeyi zorlaştırır." },
+            { "tip": "paragraf", "metin": "<b>Hata Yapmaktan Korkmak:</b> Oysa matematik, hata yaparak öğrenilen bir disiplindir." },
+            { "tip": "paragraf", "metin": "<b>Yalnız Çalışmak:</b> Tek başına mücadele etmek yerine, soruları tartışmak, başkalarının bakış açısını dinlemek öğrenmeyi kolaylaştırır." },
+            { "tip": "paragraf", "metin": "<b>Ezbere Dayalı Eğitim:</b> Formülleri, kuralları ezberleyerek değil; mantığını anlayarak öğrenmeliyiz." },
+            { "tip": "baslik", "metin": "Matematikle Barışmanın Yolları" },
+            { "tip": "paragraf", "metin": "<b>Küçük parçalara ayır:</b> Bir problemi çözmeye çalışırken onu adım adım parçala. Büyük resmi görmek bazen küçük detayları anlamaktan geçer." },
+            { "tip": "paragraf", "metin": "<b>Soru sormaktan çekinme:</b> “Bu neden böyle?” sorusu matematiğin ruhudur." },
+            { "tip": "paragraf", "metin": "<b>Görselleştir:</b> Şekiller, grafikler ve tablolar matematiği daha anlaşılır kılar." },
+            { "tip": "paragraf", "metin": "<b>Bağlantılar kur:</b> Matematiğin hayatın içinde nerelerde karşına çıktığını fark etmeye çalış." },
+            { "tip": "baslik", "metin": "Sonuç: Zor Olan Matematik Değil, Ona Bakış Açımız" },
+            { "tip": "paragraf", "metin": "Matematik, düşündüğümüz kadar korkutucu değil. Doğru yaklaşımla, herkes matematiği sevebilir ve başarabilir. Belki de asıl mesele, onu sadece bir ders değil, bir düşünme biçimi olarak görmeyi öğrenmektir." },
+            { "tip": "paragraf", "metin": "🧠 Peki sen, matematikle ilgili en çok zorlandığın konuyu hatırlıyor musun? Şimdi o konu hakkında ne düşünüyorsun? Yorumlarda buluşalım! 💬" }
+        ]
+    }
+]

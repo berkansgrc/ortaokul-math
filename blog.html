@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ortaokul Matematik Dünyası</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header"><h5 class="offcanvas-title" id="sidebarMenuLabel"><i class="bi bi-subtract me-2"></i>Menü</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+        <div class="offcanvas-body">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white" aria-current="page"><i class="bi bi-house-door me-2"></i>Ana Sayfa</a></li>
+                <li><a href="#siniflar-submenu" data-bs-toggle="collapse" class="nav-link text-white align-middle"><i class="bi bi-journals me-2"></i><span class="ms-1">Sınıflar</span> <i class="bi bi-chevron-down ms-auto"></i></a><div class="collapse nav flex-column ms-1" id="siniflar-submenu"><ul class="submenu-nav"><li><a href="siniflar/5-sinif.html" class="nav-link text-white"><span>5. Sınıf</span></a></li><li><a href="siniflar/6-sinif.html" class="nav-link text-white"><span>6. Sınıf</span></a></li><li><a href="siniflar/7-sinif.html" class="nav-link text-white"><span>7. Sınıf</span></a></li><li><a href="siniflar/lgs.html" class="nav-link text-white"><span>LGS</span></a></li></ul></div></li>
+                <li><a href="blog.html" class="nav-link active"><i class="bi bi-pencil-square me-2"></i>Blog</a></li>
+                <li><a href="uygulamalar.html" class="nav-link text-white"><i class="bi bi-grid me-2"></i>Uygulamalar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="index.html">
+    <img src="assets/images/logo.png" alt="Matematik Dünyası Logo" height="30" class="main-logo">
+</a>
+        </div>
+    </nav>
+    
+    <div class="content-wrapper">
+        <main>
+            <section class="page-title">
+                <h1>Matematik Maceraları</h1>
+                <p>Matematiğin eğlenceli dünyasından ilginç hikayeler, problemler ve daha fazlası.</p>
+            </section>
+            <div class="container-fluid mt-4">
+                <div class="row g-4" id="blog-kartlari-container"><p>Yazılar yükleniyor...</p></div>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center"><a href="index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"><i class="bi bi-subtract"></i></a><span class="mb-3 mb-md-0 text-body-secondary">© 2025 Matematik Dünyası</span></div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com"><i class="bi bi-instagram fs-4"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com"><i class="bi bi-youtube fs-4"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const blogKartlariContainer = document.getElementById('blog-kartlari-container');
+            fetch('blog.json').then(response => response.json()).then(yazilar => {
+                blogKartlariContainer.innerHTML = '';
+                if (yazilar.length === 0) { blogKartlariContainer.innerHTML = '<p>Henüz blog yazısı eklenmemiş.</p>'; return; }
+                yazilar.forEach(yazi => {
+                    const yaziLinki = `yazi-detay.html?slug=${yazi.slug}`;
+                    const kartHtml = `<div class="col-lg-4 col-md-6"><div class="card h-100 shadow-sm"><img src="${yazi.gorsel}" class="card-img-top" alt="${yazi.baslik}" style="aspect-ratio: 16/9; object-fit: cover;"><div class="card-body d-flex flex-column"><h5 class="card-title">${yazi.baslik}</h5><p class="card-text">${yazi.ozet}</p><a href="${yaziLinki}" class="btn btn-outline-primary mt-auto">Devamını Oku</a></div></div></div>`;
+                    blogKartlariContainer.innerHTML += kartHtml;
+                });
+            }).catch(error => {
+                console.error('Blog yazıları yüklenirken bir hata oluştu:', error);
+                blogKartlariContainer.innerHTML = '<p>Yazılar yüklenirken bir sorun oluştu.</p>';
+            });
+        });
+    </script>
+</body>
+</html>

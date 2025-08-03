@@ -1,0 +1,254 @@
+/* === BÖLÜM 1: GENEL STİLLER VE TEMEL KURULUM === */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    /* Arka plan rengi kaldırıldı, artık şeffaf. Arkasındaki #particles-background görünecek. */
+    color: #333333;
+    line-height: 1.6;
+    display: block;
+}
+
+/* === BÖLÜM 2: ESKİ NAVİGASYON (ARŞİV) === */
+/* Bu stiller artık aktif olarak kullanılmıyor olabilir */
+.navbar-legacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* === BÖLÜM 3: ANA İÇERİK STİLLERİ === */
+.card {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.card-body {
+    padding: 1.25rem;
+}
+.card-body.d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* === BÖLÜM 4: FOOTER (ALT BİLGİ) === */
+footer .list-unstyled a:hover {
+    color: #0d6efd !important;
+}
+
+/* === BÖLÜM 5: İÇ SAYFA STİLLERİ === */
+.page-title {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+.page-title h1 {
+    margin: 0;
+    color: #264653;
+}
+.konu-karti {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+.konu-karti h2 {
+    margin-top: 0;
+    color: #2a9d8f;
+}
+.konu-karti p {
+    flex-grow: 1;
+}
+
+/* === BÖLÜM 6: YENİ SAYFA DÜZENİ (OFFCANVAS İÇİN) === */
+.content-wrapper {
+    padding-top: 70px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #f4f7f6; /* Arka plan rengini body'den buraya taşıdık */
+}
+
+/* === BÖLÜM 7: AÇILIR-KAPANIR KENAR ÇUBUĞU MENÜSÜ === */
+.offcanvas-body .nav-link {
+    display: flex;
+    align-items: center;
+}
+.offcanvas-body .nav-link .ms-auto {
+    margin-left: auto;
+    transition: transform 0.2s ease-in-out;
+}
+.offcanvas-body .nav-link[aria-expanded="true"] .ms-auto {
+    transform: rotate(180deg);
+}
+.submenu-nav {
+    list-style: none;
+    padding-left: 2rem;
+}
+.submenu-nav .nav-link {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 0.9rem;
+    color: #adb5bd !important;
+}
+.submenu-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* === BÖLÜM 8: ANİMASYONLU HERO BÖLÜMÜ === */
+.animated-hero {
+    padding: 4rem 0;
+    background-color: transparent; 
+    border-radius: 8px;
+}
+
+/* YENİ: Yazı alanı için sarı arka plan kutusu */
+.hero-text-box {
+    background-color: rgba(255, 243, 205, 0.9); /* Bootstrap'in 'alert-warning' renginin yarı şeffaf hali */
+    padding: 2rem;
+    border-radius: 1rem; /* 16px */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Hafif bir gölge */
+}
+
+/* GÜNCELLENDİ: Yazı rengini koyu yapıp gölgeyi kaldırıyoruz */
+.animated-hero .hero-text-box h1, 
+.animated-hero .hero-text-box p {
+    color: #383d41; /* Koyu renk yazı */
+    text-shadow: none; /* Gölgeyi kaldır */
+}
+
+#lottie-container svg {
+    max-width: 100%;
+    height: auto;
+}
+/* === BÖLÜM 9: HAREKETLİ YILDIZ ARKA PLANI === */
+#particles-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* === BÖLÜM 10: HESAP MAKİNESİ MODALI === */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sütunlu bir ızgara */
+    gap: 10px; /* Butonlar arası boşluk */
+    margin-top: 15px;
+}
+
+#calc-display {
+    font-size: 2rem;
+    background-color: #e9ecef;
+}
+/* === BÖLÜM 12: KESİR ÇARPMA SİMÜLATÖRÜ === */
+
+/* Simülatörün genel konteyneri için stiller */
+.simulator-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); /* shadow-2xl */
+    border: 2px solid #e5e7eb; /* border-slate-200 */
+}
+
+.simulator-header h1 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    color: #1e293b; /* text-slate-800 */
+}
+
+.simulator-header p {
+    color: #64748b; /* text-slate-500 */
+    font-size: 1.125rem; /* text-lg */
+}
+
+/* Kesir giriş alanları */
+.fraction-input-group, .fraction-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-weight: 700;
+}
+.fraction-line {
+    border-bottom: 3px solid currentColor;
+    width: 60px;
+    border-radius: 2px;
+}
+.fraction-input {
+    width: 60px;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 2px solid #d1d5db;
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.fraction-input:focus {
+    outline: none;
+    border-color: #fb923c; /* orange-400 */
+}
+
+/* Modelleme kutuları */
+.model-grid {
+    display: grid;
+    border: 3px solid #374151;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    min-height: 120px;
+    background-color: #fff;
+    aspect-ratio: 1 / 1;
+}
+.grid-cell {
+    border: 1px solid #e5e7eb;
+}
+.model-note {
+    min-height: 60px;
+}
+
+/* Renkler ve kaplamalar */
+.overlay-f1 { background: repeating-linear-gradient(45deg, rgba(34,197,237,0.6), rgba(34,197,237,0.6) 10px, rgba(34,197,237,0.7) 10px, rgba(34,197,237,0.7) 20px); }
+.overlay-f2 { background: repeating-linear-gradient(-45deg, rgba(251,113,133,0.6), rgba(251,113,133,0.6) 10px, rgba(251,113,133,0.7) 10px, rgba(251,113,133,0.7) 20px); }
+.overlay-overlap {
+    background: repeating-linear-gradient(45deg, rgba(34,197,237,0.6), rgba(34,197,237,0.6) 10px, rgba(34,197,237,0.7) 10px, rgba(34,197,237,0.7) 20px), repeating-linear-gradient(-45deg, rgba(251,113,133,0.6), rgba(251,113,133,0.6) 10px, rgba(251,113,133,0.7) 10px, rgba(251,113,133,0.7) 20px);
+    background-color: rgba(162, 89, 255, 0.4);
+}
+/* === BÖLÜM 13: BÜYÜTÜLMÜŞ NAVBAR LOGOSU === */
+
+/* 1. Logonun içinde bulunduğu linki bir konumlandırma çerçevesi yapıyoruz. */
+.navbar-brand {
+    position: relative;
+    /* Logoya yer açmak için biraz dolgu (padding) ekleyebiliriz */
+    padding-left: 60px; /* Logo genişliğine göre ayarlayın */
+}
+
+/* 2. Logoyu normal akıştan çıkarıp, çerçeveye göre yeniden konumlandırıyoruz. */
+.main-logo {
+    position: absolute;
+    height: 150px; /* Logonun yeni, daha BÜYÜK yüksekliği */
+    width: auto; /* Genişlik otomatik ayarlansın */
+    
+    /* Dikeyde tam ortalamak için sihirli formül */
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* Yatayda konumlandırma (çerçevenin en soluna) */
+    left: -80px;
+}
