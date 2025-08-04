@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "sinif": 5,
-        "baslik": "Doğal Sayılarla İşlemler",
-        "aciklama": "Milyonlar, örüntüler, toplama, çıkarma, çarpma ve bölme işlemlerini tekrar edelim.",
-        "driveLinki": "https://drive.google.com/file/d/1N3VMvyg_z53bomTZloCJLT4EV0yN38EL/view?usp=drive_link",
-        "youtubeLinki": "https://www.youtube.com/embed/3XZ0xe9fBxE"
+        "sinif": 6,
+        "baslik": "Çarpanlar ve Katlar",
+        "aciklama": "Çarpan ve kat terimleri yeni nesil örneklerle öğrenelim.",
+        "driveLinki": "https://drive.google.com/file/d/137T711X9_6fxhgk9IGal7ov6bqx2V2uf/view?usp=sharing",
+        "youtubeLinki": ""
     },
     {
         "id": 2,
-        "sinif": 5,
-        "baslik": "Kesirler ve Kesirlerle İşlemler",
-        "aciklama": "Birim kesirler, kesirleri sıralama ve toplama-çıkarma işlemleri.",
-        "driveLinki": "https://docs.google.com/document/d/..../edit?usp=sharing",
-        "youtubeLinki": "http://googleusercontent.com/youtube.com/3..."
+        "sinif": 6,
+        "baslik": "Bölünebilme Kuralları",
+        "aciklama": "Bir sayının tüm bölenlerini kavramaya yarar ve örneklerle destekler",
+        "driveLinki": "https://drive.google.com/file/d/1OZI6E_8ANvV2Gbpss7rKEX_PA60oeiiB/view?usp=sharing",
+        "youtubeLinki": ""
     },
     {
         "id": 3,
         "sinif": 6,
-        "baslik": "Tam Sayılar ve İşlemler",
-        "aciklama": "Pozitif ve negatif tam sayılar, sayı doğrusu, toplama ve çıkarma işlemleri.",
-        "driveLinki": "https://docs.google.com/document/d/..../edit?usp=sharing",
-        "youtubeLinki": "http://googleusercontent.com/youtube.com/4..."
+        "baslik": "Asal Çarpanlar",
+        "aciklama": "Asallık kavramı nedir? Bir sayının asal olduğunu anlamak için neler bilmek gerekir.",
+        "driveLinki": "hhttps://drive.google.com/file/d/19E9vsPPyYnHETE4z12inA3lrLlglo3ix/view?usp=sharing",
+        "youtubeLinki": ""
     }
 ]

@@ -252,3 +252,9 @@ footer .list-unstyled a:hover {
     /* Yatayda konumlandırma (çerçevenin en soluna) */
     left: -80px;
 }
+/* === BÖLÜM 14: 404 HATA SAYFASI === */
+
+.error-404-title {
+    font-size: clamp(6rem, 25vw, 12rem); /* Farklı ekranlarda devasa ve ölçeklenebilir yazı boyutu */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
